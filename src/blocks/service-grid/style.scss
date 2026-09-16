@@ -1,0 +1,104 @@
+.wp-block-studio-blocks-service-grid.studio-service-grid {
+  --studio-ink: #182126;
+  --studio-muted: #657179;
+  --studio-surface: #f5f2ec;
+  --studio-line: #d9d4cb;
+  --studio-accent: #56685e;
+  color: var(--studio-ink);
+}
+
+.studio-service-grid__header {
+  max-width: 760px;
+  margin-bottom: clamp(1.75rem, 4vw, 3rem);
+}
+
+.studio-service-grid__heading {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.studio-service-grid__intro {
+  max-width: 62ch;
+  margin: 1rem 0 0;
+  color: var(--studio-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.studio-service-grid__items {
+  display: grid;
+  grid-template-columns: repeat(var(--studio-columns, 3), minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.studio-service-card {
+  overflow: hidden;
+  border: 1px solid var(--studio-line);
+  border-radius: 1.25rem;
+  background: #fff;
+}
+
+.studio-service-card__media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--studio-surface);
+}
+
+.studio-service-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.studio-service-card__content {
+  padding: 1.4rem;
+}
+
+.studio-service-card__eyebrow {
+  color: var(--studio-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.studio-service-card h3 {
+  margin: 0.55rem 0 0;
+  font-size: 1.35rem;
+}
+
+.studio-service-card p {
+  margin: 0.75rem 0 0;
+  color: var(--studio-muted);
+  line-height: 1.65;
+}
+
+.studio-service-card__link {
+  display: inline-flex;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  color: var(--studio-ink);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.studio-service-grid__empty {
+  padding: 1.25rem;
+  border: 1px dashed var(--studio-line);
+  border-radius: 1rem;
+  color: var(--studio-muted);
+}
+
+@media (max-width: 900px) {
+  .studio-service-grid__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .studio-service-grid__items {
+    grid-template-columns: 1fr;
+  }
+}
