@@ -1,5 +1,7 @@
 # Studio Blocks — WordPress + React Integration
 
+[![Quality checks](https://github.com/Kamilla29/studio-blocks-wp/actions/workflows/quality.yml/badge.svg)](https://github.com/Kamilla29/studio-blocks-wp/actions/workflows/quality.yml)
+
 A portfolio-oriented **WordPress Gutenberg plugin** demonstrating how React/TypeScript application patterns can be integrated with PHP, WordPress content and the REST API.
 
 The project is deliberately different from a normal React SPA. Its purpose is to show CMS-oriented frontend engineering: custom Gutenberg blocks, server rendering, typed React interactions, WordPress data models and a clean PHP ↔ React boundary.
