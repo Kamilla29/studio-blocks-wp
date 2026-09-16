@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studio-blocks/lead-form",
+  "version": "1.0.0",
+  "title": "Studio Lead Form",
+  "category": "widgets",
+  "icon": "feedback",
+  "description": "Accessible React form connected to a custom WordPress REST endpoint.",
+  "textdomain": "studio-blocks",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": "Start a project"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Tell us what you want to build"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Send request"
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}
