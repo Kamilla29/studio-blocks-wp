@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studio-blocks/service-grid",
+  "version": "1.0.0",
+  "title": "Studio Service Grid",
+  "category": "widgets",
+  "icon": "grid-view",
+  "description": "Dynamic service cards rendered from a WordPress custom post type.",
+  "textdomain": "studio-blocks",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "What we can build together"
+    },
+    "intro": {
+      "type": "string",
+      "default": "A dynamic Gutenberg block backed by WordPress content."
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "limit": {
+      "type": "number",
+      "default": 6
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
