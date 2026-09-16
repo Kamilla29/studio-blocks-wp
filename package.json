@@ -1,0 +1,27 @@
+{
+  "name": "studio-blocks-wp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WordPress Gutenberg + React/TypeScript portfolio plugin with PHP and REST integration.",
+  "scripts": {
+    "build": "wp-scripts build --webpack-copy-php",
+    "start": "wp-scripts start --webpack-copy-php",
+    "format": "wp-scripts format",
+    "lint:js": "wp-scripts lint-js src",
+    "lint:css": "wp-scripts lint-style 'src/**/*.scss'",
+    "packages-update": "wp-scripts packages-update"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.9.1",
+    "@tanstack/react-query": "5.103.0",
+    "react-hook-form": "7.88.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "35.0.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
